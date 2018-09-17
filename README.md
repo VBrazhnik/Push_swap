@@ -30,7 +30,7 @@ Created `checker` has two additional modes:
   <img src="/images/checker_(verbose_and_color_mode).png" width="48%" alt="checker (verbose and color mode)"/>
 </p>
 
-Also this project has a simple visualizer.
+Also this project has a simple visualizer. **(macOS is only supported)**
 
 ![visualizer](/images/visualizer.png)
 
