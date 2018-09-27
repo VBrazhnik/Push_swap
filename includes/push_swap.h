@@ -33,7 +33,6 @@ typedef struct			s_stack_elem
 	int					number;
 	ssize_t				index;
 	t_bool				keep_in_stack;
-	t_bool				keep;
 	struct s_stack_elem	*previous;
 	struct s_stack_elem *next;
 }						t_stack_elem;
@@ -44,7 +43,6 @@ typedef struct			s_stack
 	size_t				size;
 	size_t				pairs;
 	t_stack_elem		*markup_head;
-	t_stack_elem		*markup;
 }						t_stack;
 
 typedef struct			s_shift_info

@@ -21,7 +21,6 @@ t_stack_elem	*create_elem(int number)
 		terminate(ERR_MEMALLOC);
 	new->number = number;
 	new->index = -1;
-	new->keep = false;
 	new->keep_in_stack = false;
 	new->previous = NULL;
 	new->next = NULL;
