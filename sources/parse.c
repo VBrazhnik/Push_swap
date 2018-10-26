@@ -24,7 +24,7 @@ static void	parse_arr(t_stack *stack,
 	i = 1;
 	while (i < argc)
 	{
-		if (!ft_isint(argv[i]))
+		if (!ft_isint(argv[i], false))
 			terminate(ERR_NAN);
 		add(stack, create_elem(ft_atoi(argv[i++])));
 	}
@@ -40,11 +40,11 @@ static void	parse_str(t_stack *stack,
 	i = 0;
 	while (numbers[i])
 	{
-		if (!ft_isint(numbers[i]))
+		if (!ft_isint(numbers[i], false))
 			terminate(ERR_NAN);
 		add(stack, create_elem(ft_atoi(numbers[i++])));
 	}
-	free_strsplit_arr(numbers);
+	ft_strsplit_free(&numbers);
 }
 
 t_stack		*parse(int argc,

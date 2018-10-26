@@ -215,8 +215,6 @@ void					exec_command(t_stack *a_stack,
 ** Free
 */
 
-void					free_strsplit_arr(char **arr);
-
 void					free_command_list(t_command_list *list);
 
 void					free_stack(t_stack *stack);

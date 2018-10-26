@@ -13,16 +13,6 @@
 #include "push_swap.h"
 #include <stdlib.h>
 
-void	free_strsplit_arr(char **arr)
-{
-	size_t i;
-
-	i = 0;
-	while (arr[i])
-		free(arr[i++]);
-	free(arr);
-}
-
 void	free_command_list(t_command_list *list)
 {
 	t_command *current;
