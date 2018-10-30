@@ -15,10 +15,10 @@
 #include "libft.h"
 
 static void	print_int(int number,
-				int len)
+				size_t len)
 {
-	int	spaces;
-	int	numlen;
+	size_t	spaces;
+	size_t	numlen;
 
 	numlen = ft_signedlen(number, 10);
 	spaces = len - numlen;
