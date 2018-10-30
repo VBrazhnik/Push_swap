@@ -16,5 +16,5 @@
 void	terminate(const char *str)
 {
 	ft_putendl_fd(str, 2);
-	exit(0);
+	exit(1);
 }
